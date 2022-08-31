@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+/*-------------------------  */
+:root{
+    --blue: #1b1938;
+    --dark-violet: #0a0c19;
+    --violet: #aa5cdb;
+    --white: #ffff;
+    --off-white: #dcdcdc;
+    --primary-font: 'Inter', sans-serif;
+    --second-font: 'Lexend Deca', sans-serif;
+}
+/* ----------------------- */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------ */
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-violet);
+}
+.card{
+    height: 60vh;
+    width: 70%;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-details{
+    width: 50%;
+    height: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+.card-title > h1{
+    margin-bottom: 25px;
+}
+.card-title > h1 > span{
+    color: var(--violet);
+}
+.card-stat{
+    display: flex;
+    gap: 25px;
+}
+.card-img{
+    width: 50%;
+    height: 100%;  
+}
+.card-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
